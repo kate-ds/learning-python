@@ -1,4 +1,3 @@
-
 while True:
     time = input("Enter time in seconds: ")
     if not time.isdecimal():
