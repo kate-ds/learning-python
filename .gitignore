@@ -3,3 +3,4 @@ config
 .ipynb_checkpoints
 .DS_Store
 venv/
+Lesson 1.py
