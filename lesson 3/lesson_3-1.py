@@ -1,4 +1,4 @@
-def my_func(num1, num2):
+def my_division(num1, num2):
     return num1 / num2
 
 
@@ -6,7 +6,7 @@ while True:
     try:
         num1 = float(input("num1: "))
         num2 = float(input("num2: "))
-        print(my_func(num1, num2))
+        print(my_division(num1, num2))
     except ValueError:
         print("Incorrect value!")
     except ZeroDivisionError:
