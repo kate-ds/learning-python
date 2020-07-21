@@ -8,3 +8,9 @@
 my_list = [1, 0, 2, 3, 4, 5, 21, 54, 6, 3, 4, 13, 0, 12, 13, 1, 54]
 new_list = [el for el in my_list if  my_list.count(el) == 1]
 print(new_list)
+
+# ----------------------------------------------------------------
+new_list2 = list(filter(lambda el: my_list.count(el) == 1, my_list))
+print(new_list2)
+
+
