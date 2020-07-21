@@ -17,12 +17,12 @@ for word in cycle(my_list):
 # ---------------------------------------------------------------------------
 
 einstein_said = ["Example",  "isn`t", "another way", "to teach", "it is", "the only way", "to teach."]
-iter = cycle(albert_einstein_said)
-print(next(iter))
-print(next(iter))
-print(next(iter))
-print(next(iter))
-print(next(iter))
-print(next(iter))
-print(next(iter))
+word = cycle(einstein_said)
+print(next(word))
+print(next(word))
+print(next(word))
+print(next(word))
+print(next(word))
+print(next(word))
+print(next(word))
 
