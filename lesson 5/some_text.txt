@@ -1,0 +1,7 @@
+python
+golang
+java
+let's learn something
+hello world!
+hi everyone!
+Salut a tous!
