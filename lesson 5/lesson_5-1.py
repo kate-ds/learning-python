@@ -1,3 +1,8 @@
+"""
+1. Создать программно файл в текстовом формате, записать в него построчно данные,
+вводимые пользователем. Об окончании ввода данных свидетельствует пустая строка.
+"""
+
 from sys import stdin
 
 with open("user_text.txt", "w", encoding="utf-8") as user_text:
@@ -17,7 +22,7 @@ for line in stdin:
     if line.isspace():
         break
 print(user_input, end="\n")
-with open("user_text0.txt", "w", encoding="utf-8") as user_text:
+with open("user_text.txt", "w", encoding="utf-8") as user_text:
     user_text.write(user_input[:-1])
 
 # -------------------------------------------------------------------------------------

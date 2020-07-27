@@ -4,3 +4,8 @@ config
 .DS_Store
 venv/
 Lesson 1.py
+*.txt
+!lesson 5/people.txt
+!dictionary.txt
+!text_6.txt
+big_question.py
