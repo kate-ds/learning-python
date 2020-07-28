@@ -20,7 +20,7 @@ class Car:
     def go(self):
         print(f"{self.name} speed is {self.speed} km/h")
         if self.is_police:
-            print('{blue}POLICE !!!{endcolor}'.format(blue='\033[91m', endcolor='\033[0m'))
+            print('{red}POLICE !!!{endcolor}'.format(red='\033[91m', endcolor='\033[0m'))
 
     def stop(self):
         print(f"{self.name} stopped")
