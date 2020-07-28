@@ -8,19 +8,28 @@
 """
 
 from time import sleep
+import os
 
 
 class TrafficLight:
     def __init__(self):
-        self.__color = [{"color": "red", "duration": 7},
-                        {"color": "yellow", "duration": 2},
-                        {"color": "green", "duration": 7}]
+        self.__color = [{"color": "\x1b[6;37;41m  red   \x1b[0m", "duration": 7},
+                        {"color": "\x1b[6;37;43m yellow \x1b[0m", "duration": 2},
+                        {"color": "\x1b[6;37;42m green  \x1b[0m", "duration": 7}]
 
     def running(self):
         for e in self.__color:
-            print(f"Running {e['color']}")
+            print(e["color"])
             sleep(e["duration"])
+
+    def running2(self):
+        os.system('cls' if os.name == 'nt' else 'clear')
+        for e in self.__color:
+            print(e["color"])
+            sleep(e["duration"])
+            os.system('cls' if os.name == 'nt' else 'clear')
 
 
 traffic_light = TrafficLight()
 traffic_light.running()
+traffic_light.running2()
