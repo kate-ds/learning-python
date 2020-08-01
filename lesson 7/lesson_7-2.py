@@ -24,6 +24,7 @@ class Coat(Wear):
     def __init__(self, v):
         self.v = v
 
+    @property
     def calc(self):
         return self.v / 6.5 + 0.3
 
@@ -32,17 +33,18 @@ class Suit(Wear):
     def __init__(self, h):
         self.h = h
 
+    @property
     def calc(self):
         return self.h * 2 + 0.3
 
 
 a = Coat(10)
-print(a.calc())
+print(a.calc)
 
 b = Suit(20)
-print(b.calc())
+print(b.calc)
 
-print("Общая сумма", a.calc() + b.calc())
+print("Общая сумма", a.calc + b.calc)
 
 
 
