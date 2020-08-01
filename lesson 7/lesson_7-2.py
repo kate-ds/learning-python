@@ -42,41 +42,45 @@ print(a.calc())
 b = Suit(20)
 print(b.calc())
 
+print("Общая сумма", a.calc() + b.calc())
+
+
+
 # -------------------------------------------2 -----------------------------
+#
+# class Wear:
+#     def __init__(self, v, h):
+#         self.v = v
+#         self.h = h
+#
+#     def calc_coat(self):
+#         return self.v / 6.5 + 0.3
+#
+#     def calc_suit(self):
+#         return self.h * 2 + 0.3
+#
+#     @property
+#     def get_sum(self):
+#         return self.v / 6.5 + 0.3 + self.h * 2 + 0.3
+#
+#
+# class Coat(Wear):
+#     def __init__(self, v, h):
+#         super().__init__(v, h)
+#         self.calc_coat = self.v / 6.5 + 0.3
+#
+#
+# class Suit(Wear):
+#     def __init__(self, v, h):
+#         super().__init__(v, h)
+#
+#     def calc(self):
+#         return self.h * 2 + 0.3
+#
 
-class Wear:
-    def __init__(self, v, h):
-        self.v = v
-        self.h = h
-
-    def calc_coat(self):
-        return self.v / 6.5 + 0.3
-
-    def calc_suit(self):
-        return self.h * 2 + 0.3
-
-    @property
-    def get_sum(self):
-        return self.v / 6.5 + 0.3 + self.h * 2 + 0.3
-
-
-class Coat(Wear):
-    def __init__(self, v, h):
-        super().__init__(v, h)
-        self.calc_coat = self.v / 6.5 + 0.3
-
-
-class Suit(Wear):
-    def __init__(self, v, h):
-        super().__init__(v, h)
-
-    def calc(self):
-        return self.h * 2 + 0.3
-
-
-a = Coat(10, 5)
-print(a.calc_coat)
-
-b = Suit(20, 4)
-
-print(a.get_sum)
+# a = Coat(10)
+# print(a.calc())
+#
+# b = Suit(20)
+#
+# print(b.calc())
